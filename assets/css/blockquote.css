@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+    # BLOCK QUOTE
+--------------------------------------------------------------*/
+.wp-block-quote {
+  position: relative;
+  padding-left: var(--gutter);
+  margin-left: 0;
+  margin-right: 0;
+  font-family: var(--font-family-2);
+}
+
+.wp-block-quote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: var(--color-black);
+  opacity: .125;
+}
+
+.wp-block-quote cite {
+  display: block;
+  margin-top: calc(var(--gutter) * .5);
+  font-style: normal;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-9);
+}
+
+.wp-block-quote cite::before {
+  content: "\2014\00a0";
+}
+
+/*--------------------------------------------------------------
+    # BLOCK QUOTE
+      LARGE
+--------------------------------------------------------------*/
+.wp-block-quote.is-style-large {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+}
+
+.wp-block-quote.is-style-large::before {
+  content: none;
+}

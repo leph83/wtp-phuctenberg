@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+    # BLOCK GALLERY
+      is-cropped
+      columns-2
+      columns-3
+      columns-4
+      columns-5
+      columns-6
+      columns-7
+      columns-8
+    
+      source: https://www.youtube.com/watch?v=RUyNJaoJH_k
+--------------------------------------------------------------*/
+
+.wp-block-gallery {
+    /* display: flow-root; */
+}
+
+/*--------------------------------------------------------------
+    # BLOCK GALLERY
+        FLOAT
+--------------------------------------------------------------*/
+.wp-block-gallery.alignright,
+.wp-block-gallery.alignleft,
+.wp-block-gallery.aligncenter {
+    float: none;
+}
+
+.blocks-gallery-grid {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--gutter);
+}
+
+.blocks-gallery-item {}
+
+.blocks-gallery-item>figure {
+    position: relative;
+    display: grid;
+}
+
+.blocks-gallery-item>figure>* {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.blocks-gallery-item>figure>a {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+    # BLOCK GALLERY
+        CROPPED      
+--------------------------------------------------------------*/
+.is-cropped .blocks-gallery-item>figure,
+.is-cropped .blocks-gallery-item>figure>a {
+    height: 100%;
+    width: 100%;
+}
+
+.is-cropped .blocks-gallery-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: none;
+}
+
+/*--------------------------------------------------------------
+    # BLOCK GALLERY
+        CAPTION      
+--------------------------------------------------------------*/
+
+.blocks-gallery-item__caption {
+    align-self: flex-end;
+    padding: calc(var(--gutter) * 0.5);
+    text-align: center;
+    color: var(--color-white);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+}
+
+/*--------------------------------------------------------------
+    # BLOCK GALLERY
+        COLUMNS      
+--------------------------------------------------------------*/
+.columns-2.wp-block-gallery .blocks-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.columns-3.wp-block-gallery .blocks-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.columns-4.wp-block-gallery .blocks-gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.columns-5.wp-block-gallery .blocks-gallery-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.columns-6.wp-block-gallery .blocks-gallery-grid {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.columns-7.wp-block-gallery .blocks-gallery-grid {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.columns-8.wp-block-gallery .blocks-gallery-grid {
+    grid-template-columns: repeat(8, 1fr);
+}

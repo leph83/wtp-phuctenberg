@@ -9,7 +9,22 @@ if (!function_exists('wtp_phuctenberg_load_css')) {
         $css_path = 'assets/css/';
         $css_files = array(
             'phuctenberg.css',
-            'media-text.css',
+            'blockquote.css',
+            'buttons.css',
+            'code.css',
+            'columns.css',
+            'cover.css',
+            'embed.css',
+            'gallery.css',
+            'group.css',
+            'image.css',
+            'lists.css',
+            'mediatext.css',
+            'paragraph.css',
+            'pullquote.css',
+            'socialmedia.css',
+            'spacer.css',
+            'video.css',
         );
 
         // STYLES

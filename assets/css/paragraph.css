@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+  # PARAGRAPH
+  - todo: clearfix?
+  --------------------------------------------------------------*/
+  .has-drop-cap:first-letter {
+    float: left;
+    font-size: var(--font-size-c);
+    line-height: 1;
+    padding-right: 0.125em;
+  }
+  
+  .has-drop-cap {
+    display: flow-root;
+  }
+  

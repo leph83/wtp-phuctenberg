@@ -1,0 +1,8 @@
+/*--------------------------------------------------------------
+    # LISTS
+--------------------------------------------------------------*/
+.entry-content ul:not([class]),
+.entry-content ol:not([class]),
+.entry-content dl:not([class]) {
+    padding-left: 2.5em;
+}

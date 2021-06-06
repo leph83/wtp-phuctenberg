@@ -1,0 +1,146 @@
+/*--------------------------------------------------------------
+    # BLOCK COVER
+      fixed image
+      repeated
+--------------------------------------------------------------*/
+.wp-block-cover {
+    position: relative;
+    min-height: calc(var(--containerquery) * 9 / 16 * 2 / 3);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wp-block-cover__inner-container {
+    position: relative;
+    z-index: 10;
+}
+
+.wp-block-cover>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+    # BLOCK COVER
+        OVERLAY
+--------------------------------------------------------------*/
+.wp-block-cover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.has-background-dim:not([class*="background-color"])::after {
+    background-color: var(--color-black);
+    opacity: 0.5;
+}
+
+.has-background-dim {
+    color: var(--color-white);
+}
+
+.has-background-dim-10::after {
+    opacity: 0.1;
+}
+
+.has-background-dim-20::after {
+    opacity: 0.2;
+}
+
+.has-background-dim-30::after {
+    opacity: 0.3;
+}
+
+.has-background-dim-40::after {
+    opacity: 0.4;
+}
+
+.has-background-dim::after {
+    opacity: 0.5;
+}
+
+.has-background-dim-60::after {
+    opacity: 0.6;
+}
+
+.has-background-dim-70::after {
+    opacity: 0.7;
+}
+
+.has-background-dim-80::after {
+    opacity: 0.8;
+}
+
+.has-background-dim-90::after {
+    opacity: 0.9;
+}
+
+.has-background-dim-100::after {
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+    # BLOCK COVER
+        FIXED BACKGROUND
+--------------------------------------------------------------*/
+.wp-block-cover.has-parallax {
+    background-attachment: fixed;
+}
+
+
+/*--------------------------------------------------------------
+    # BLOCK COVER
+        BACKGROUND REPEAT
+--------------------------------------------------------------*/
+.wp-block-cover.is-repeated {
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+
+/*--------------------------------------------------------------
+    # BLOCK COVER
+        CONTENT POSITION
+--------------------------------------------------------------*/
+.wp-block-cover[class*="top"] {
+    justify-content: flex-start;
+}
+
+.wp-block-cover[class*="left"] {
+    align-items: flex-start;
+}
+
+.wp-block-cover[class*="right"] {
+    align-items: flex-end;
+}
+
+.wp-block-cover[class*="bottom"] {
+    justify-content: flex-end;
+}
+
+/*--------------------------------------------------------------
+    # BLOCK COVER
+        GRADIENT
+--------------------------------------------------------------*/
+.wp-block-cover__gradient-background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+    # BLOCK IMAGE
+    - ROUNDED
+--------------------------------------------------------------*/
+
+.wp-block-image {
+    display: flow-root;
+}
+
+.wp-block-image.alignfull {
+    padding: initial;
+}
+
+.wp-block-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-block-image.size-full img,
+.wp-block-image .alignleft img,
+.wp-block-image .alignright img,
+.wp-block-image .aligncenter img {
+    max-width: none;
+    width: 100%;
+}
+
+.wp-block-image figcaption {
+    text-align: center;
+    margin-top: calc(var(--gutter) / 2);
+}
+
+/*--------------------------------------------------------------
+    # BLOCK IMAGE
+        ROUNDED
+--------------------------------------------------------------*/
+.wp-block-image.is-style-rounded img {
+    border-radius: 9999rem;
+    overflow: hidden;
+}

@@ -1,0 +1,12 @@
+/*--------------------------------------------------------------
+    # BLOCK CODE
+--------------------------------------------------------------*/
+.wp-block-code {
+    padding: var(--gutter);
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-white);
+
+    font-family: var(--font-family-3);
+    font-weight: normal;
+}

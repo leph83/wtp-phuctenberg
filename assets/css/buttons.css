@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+    # BLOCK BUTTONS
+      is-content-justification-center
+--------------------------------------------------------------*/
+.wp-block-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--gutter) * 1);
+}
+
+.wp-block-button__link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.is-content-justification-center {
+    justify-content: center;
+}
+
+.is-content-justification-right {
+    justify-content: flex-end;
+}
