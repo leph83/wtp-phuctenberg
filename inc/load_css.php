@@ -33,5 +33,5 @@ if (!function_exists('wtp_phuctenberg_load_css')) {
             wp_enqueue_style('wtp-phuctenberg-' . $key, plugin_dir_url(dirname(__FILE__)) . $css_path. $css_file, false, $css_version);
         }
     }
-    add_action('wp_enqueue_scripts', 'wtp_phuctenberg_load_css', 99);
+    add_action('wp_enqueue_scripts', 'wtp_phuctenberg_load_css', 50);
 }

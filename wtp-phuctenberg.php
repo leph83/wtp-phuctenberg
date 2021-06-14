@@ -32,5 +32,4 @@ along with What the Phuc - Phuctenberg. If not, see https://www.gnu.org/licenses
 
 // CUSTOMIZER
 require_once('inc/wtp_disable_gutenberg.php');
-
 require_once('inc/load_css.php');
