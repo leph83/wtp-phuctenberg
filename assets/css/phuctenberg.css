@@ -26,10 +26,10 @@
   margin-bottom: 0;
 }
 
-/* 
-.entry-content *+* {
 
-} */
+.entry-content *+* {
+  margin-top: var(--vertical-rhythm, var(--gutter));
+} 
 
 .entry-content > *, 
 [class*=inner-container] > * {
