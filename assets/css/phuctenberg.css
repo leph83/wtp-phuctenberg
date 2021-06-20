@@ -2,38 +2,18 @@
   --gutter: 2.4rem;
 }
 
-/*--------------------------------------------------------------
-# CONTENT WIDTHS
-  - 3 Widths are available by default 
-  - Widths can be set in the customizer
---------------------------------------------------------------*/
-/* 
-.entry-content .alignfull,
-.entry-content .alignwide,
-.entry-content>*:not(.alignwide):not(.alignfull) {
-  margin-left: auto;
-  margin-right: auto;
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-1: #058935;
+  --color-2: #1f518e;
+  --color-3: #7c0202;
+
+  --color-4: #141414;
+  --color-5: #c4c4c4;
+  --color-6: #212121;
 }
-
-.alignfull {
-  max-width: var(--max-width-1);
-}
-
-.alignwide {
-  max-width: var(--max-width-2);
-}
-
-.entry-content>*:not(.alignwide):not(.alignfull) {
-  max-width: var(--max-width-3);
-}
-
-
-
-.entry-content>* {
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
-} 
-*/
 
 /*--------------------------------------------------------------
   # VERTICAL RHYTHM
@@ -46,7 +26,13 @@
   margin-bottom: 0;
 }
 
+/* 
 .entry-content *+* {
+
+} */
+
+.entry-content > *, 
+[class*=inner-container] > * {
   margin-top: var(--vertical-rhythm, var(--gutter));
 }
 
@@ -89,10 +75,6 @@
   margin-top: 0;
 }
 
-.wp-block-button {
-  margin-top: 0;
-}
-
 .entry-content ul:not([class]) li,
 .entry-content ol:not([class]) li,
 .entry-content dl:not([class]) dt {
@@ -105,4 +87,24 @@
 
 [class*="has-background"] {
   padding: var(--gutter);
+}
+
+
+/*--------------------------------------------------------------
+# TEXT ALIGN
+--------------------------------------------------------------*/
+.has-text-align-left {
+  text-align: left;
+}
+
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+
+.has-text-align-justify {
+  text-align: justify;
 }
