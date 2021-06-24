@@ -34,6 +34,11 @@
 .entry-content > *, 
 [class*=inner-container] > * {
   margin-top: var(--vertical-rhythm, var(--gutter));
+} 
+
+.entry-content > *, 
+[class*=inner-container] > * {
+  margin-top: var(--vertical-rhythm, var(--gutter));
 }
 
 /*--------------------------------------------------------------
@@ -72,10 +77,6 @@
 }
 
 .wp-block-column {
-  margin-top: 0;
-}
-
-.wp-block-buttons {
   margin-top: 0;
 }
 
