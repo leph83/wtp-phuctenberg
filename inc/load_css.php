@@ -25,6 +25,7 @@ if (!function_exists('wtp_phuctenberg_load_css')) {
             'socialmedia.css',
             'spacer.css',
             'video.css',
+            'latestposts.css'
         );
 
         // STYLES

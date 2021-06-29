@@ -1,0 +1,30 @@
+.is-grid.wp-block-latest-posts {
+    list-style-type: none;
+    display: grid;
+    grid-gap: var(--gutter);
+}
+
+
+
+@media (min-width: 768px) {
+    .columns-2.wp-block-latest-posts {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+
+    .columns-3.wp-block-latest-posts {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .columns-4.wp-block-latest-posts {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .columns-5.wp-block-latest-posts {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .columns-6.wp-block-latest-posts {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
